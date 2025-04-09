@@ -13,11 +13,12 @@ jobs:
     steps:
     - name: install ssh keys
       run: |
-        mkdir -p ~/.ssh/
-        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/private.key
-        chmod 600 ~/.ssh/private.key
-        ssh-keyscan -H ${{ secrets.SSH_HOST }} > ~/.ssh/known_hosts 
+        mkdir -p ~/.ssh
+        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
     - name: connect, pull, build
-      run: ssh -i ~/.ssh/private.key -o "StrictHostKeyChecking no" ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd ${{ secrets.WORK_DIR }} && git checkout ${{ secrets.MAIN_BRANCH }} && npm run build &&  git pull && exit"
+      run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd ${{ secrets.WORK_DIR }} && git checkout ${{ secrets.MAIN_BRANCH }} && npm run build &&  git pull && exit"
     - name: clean ssh keys
       run: rm -rf ~/.ssh
