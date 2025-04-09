@@ -17,11 +17,12 @@ jobs:
         echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
-        
+
     - name: Test SSH connection
       run: ssh -v ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "echo 'Connected'"
 
     - name: connect, pull, build
       run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd ${{ secrets.WORK_DIR }} && git checkout ${{ secrets.MAIN_BRANCH }} && npm run build &&  git pull && exit"
+      
     - name: clean ssh keys
       run: rm -rf ~/.ssh
