@@ -16,23 +16,10 @@ jobs:
         mkdir -p ~/.ssh
         echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
-
-    - name: Check key presence
-      run: |
-        ls -la ~/.ssh
-        file ~/.ssh/id_rsa
-
-    - name: Add SSH key to agent
-      run: |
-        eval "$(ssh-agent -s)"
-        ssh-add ~/.ssh/id_rsa
-
-    - name: Test SSH connection
-      run: ssh -v ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "echo 'Connected'"
+        ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts  
 
     - name: connect, pull, build
-      run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd ${{ secrets.WORK_DIR }} && git checkout ${{ secrets.MAIN_BRANCH }} && npm run build &&  git pull && exit"
+      run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd ${{ secrets.WORK_DIR }} && git checkout ${{ secrets.MAIN_BRANCH }} && npm install && fnpm run build &&  git pull && exit"
 
     - name: clean ssh keys
       run: rm -rf ~/.ssh
