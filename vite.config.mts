@@ -3,6 +3,14 @@ import tailwindcss from '@tailwindcss/vite'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 export default defineConfig({
+  build: {
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        links: 'links.html',
+      }
+    }
+  },
   plugins: [
     tailwindcss(),
     ViteImageOptimizer({
