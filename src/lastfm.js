@@ -7,13 +7,13 @@ fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=glute
     var trackImage = track.image[3]["#text"];
     var trackHtml = `
         <div class="flex max-xl:flex-co relative ">
-            <img class="rounded-3xl aspect-square shrink-0" src="${trackImage}" alt="${trackName}">
+            <img class="rounded-3xl aspect-square shrink-0 z-1" src="${trackImage}" alt="${trackName}">
             <div class="flex justify-center p-5 flex-col text-2xl font-mono font-bold gap-2">
-                <p class="text-5xl">${trackName}</p>
-                <p class="text-xl">${artistName}</p>
-                <p class="text-xl">${albumName}</p>
-                <a class="text-red-400" href="${trackUrl}" target="_blank">listen</a>
                 <img class="absolute right-3 flex-1 max-w-md -top-4 invert opacity-10" src="${tribal}"></img>
+                <p class="text-5xl z-1">${trackName}</p>
+                <p class="text-xl z-1">${artistName}</p>
+                <p class="text-xl z-1">${albumName}</p>
+                <a class="text-red-400 z-1" href="${trackUrl}" target="_blank">listen</a>
             </div>
         </div>
     `;
