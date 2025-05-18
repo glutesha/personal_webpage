@@ -4,6 +4,7 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 export default defineConfig({
   build: {
+    assetsInlineLimit: 0,
     rollupOptions: {
       input: {
         main: 'index.html',
