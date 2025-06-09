@@ -55,7 +55,6 @@ target.position.y = camera.position.y;
 
 var mouseX = 0;
 var mouseY = 0;
-var scrollDelta = 0;
 
 window.addEventListener('mousemove', (event) => {
     const rect = container.getBoundingClientRect();
