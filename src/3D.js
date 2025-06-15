@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
-var container = document.getElementById('glutesha');
+let container = document.getElementById('glutesha');
 
 const loader = new GLTFLoader();
 const scene = new THREE.Scene();
@@ -53,8 +53,8 @@ loader.load('gluten.glb', function( glb ) {
 target.position.z = camera.position.z;
 target.position.y = camera.position.y;
 
-var mouseX = 0;
-var mouseY = 0;
+let mouseX = 0;
+let mouseY = 0;
 
 window.addEventListener('mousemove', (event) => {
     const rect = container.getBoundingClientRect();
