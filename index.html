@@ -9,68 +9,72 @@
 	<script type="module" src="./src/age.js" defer></script>
 	<script type="module" src="./src/lastfm.js" defer></script>
 	<script type="module" src="./src/webring.js" defer></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta property="og:title" content="Glutesha"/>
 	<meta property="og:description" content="Software developer, electronics enthusiast."/>
 	<meta property="og:image" content="imgs/chuvdj.png"/>
 </head>
 <body class="bg-neutral-900 text-white">
-	<div class="flex justify-center items-center pt-2">
-		<p class="text-center font-bold font-mono text-2xl"><a href="https://glutesha.me">home</a></p>
-		<p class="text-center font-bold font-mono text-2xl">&nbsp;/&nbsp;</p>
-		<p class="text-center font-bold font-mono text-2xl"><a href="https://t.me/glushalair">tg</a></p>
-		<p class="text-center font-bold font-mono text-2xl">&nbsp;/&nbsp;</p>
-		<p class="text-center font-bold font-mono text-2xl"><a href="mailto:mail@glutesha.me">mail</a></p>
-		<p class="text-center font-bold font-mono text-2xl">&nbsp;/&nbsp;</p>
-		<p class="text-center font-bold font-mono text-2xl"><a href="https://github.com/glutesha">github</a></p>
-		<p class="text-center font-bold font-mono text-2xl">&nbsp;/&nbsp;</p>
-		<p class="text-center font-bold font-mono text-2xl"><a href="/links">links</a></p>
+	<div class="flex justify-center items-center pt-2 text-md md:text-2xl">
+		<p class="text-center font-bold font-mono"><a href="https://glutesha.me">home</a></p>
+		<p class="text-center font-bold font-mono">&nbsp;/&nbsp;</p>
+		<p class="text-center font-bold font-mono"><a href="https://t.me/glushalair">tg</a></p>
+		<p class="text-center font-bold font-mono">&nbsp;/&nbsp;</p>
+		<p class="text-center font-bold font-mono"><a href="mailto:mail@glutesha.me">mail</a></p>
+		<p class="text-center font-bold font-mono">&nbsp;/&nbsp;</p>
+		<p class="text-center font-bold font-mono"><a href="https://github.com/glutesha">github</a></p>
+		<p class="text-center font-bold font-mono">&nbsp;/&nbsp;</p>
+		<p class="text-center font-bold font-mono"><a href="/links">links</a></p>
 	</div>
 	<div>
-		<p class="p-1 font-mono text-xl text-center text-gray-400">Website was proudly made by me with a little help from <a class="text-fuchsia-400" href="https://otomir23.me">otomir23</a>, 3D model was made by <a class="text-fuchsia-400" href="https://bsky.app/profile/brab1on.bsky.social">BRAB!ON</a>.</p>
+		<p class="px-1 font-mono text-xs md:text-xl text-center text-gray-400">Website was proudly made by me with a little help from <a class="text-fuchsia-400" href="https://otomir23.me">otomir23</a>, 3D model was made by <a class="text-fuchsia-400" href="https://bsky.app/profile/brab1on.bsky.social">BRAB!ON</a>.</p>
 	</div>
-	<div class="flex px-15 justify-center items-center">
-		<div id="glutesha" class="aspect-square w-xs md:w-100 flex-shrink-0"></div>
-		<div class="md:flex-col justify-center items-start">
-			<p class="font-mono text-2xl md:text-3xl">I am</p>
-			<img class="w-3xl md:w-2xl" src="./imgs/logo.png" alt="Glutesha">
-			<p class="font-mono text-2xl md:text-3xl text-">Software developer, electronics enthusiast.</p>
+	<div class="flex-col md:flex-row flex justify-center items-center px-5 md:px-0">
+		<div id="glutesha" class="aspect-square w-100 shrink-0"></div>
+		<div class="md:flex-col gap-5 justify-center text-center md:text-start md:items-start">
+			<p class="font-mono text-xl md:text-3xl">I am</p>
+			<div>
+				<img class="w-xl md:w-2xl" src="./imgs/logo.png" alt="Glutesha">
+			</div>
+			<p class="font-mono text-xl md:text-3xl">Software developer, electronics enthusiast.</p>
 		</div>
 	</div>
-	<div class="w-full flex px-5 max-w-7xl flex-col mx-auto">
-			<div class="flex flex-row items-center">
-				<div class="flex-row justify-center font-mono text-left text-2xl md:text-3xl">
+	<div class="w-full flex pt-5 px-5 max-w-7xl flex-col mx-auto">
+			<div class="flex flex-col gap-5 md:flex-row items-center">
+				<div class="flex-row justify-center font-mono text-left text-xl md:text-3xl">
 					<p class= "text-emerald-700 text-left text-2xl md:text-3xl">// About me</p>
 					<p id="about">Sup! My real name is Vladislav Mironov and my age is 16. Currently interested in <a class="text-cyan-400">web</a> and <a class="text-cyan-400">embedded</a>. Also interested in DJing and audio visuals. Fun fact: This website is also accesible via <a class="text-orange-400" href="https://glutesha.fckn.rocks">glutesha.fckn.rocks</a>!</p> 
 				</div>
-				<div class="flex min-w-xs flex-col justify-center items-center gap-2">
-					<img class="w-32 md:w-48 aspect-square rounded-full" src="./imgs/me.png" alt='My photo from "Форум кванторианцев 2024"'>
-					<p class="font-mono max-w-xs text-xl text-center md:text-3xl text-blue-400">This is me if you even care :P</p>
+				<div class="flex min-w-xs flex-row md:flex-col justify-center items-center gap-5">
+					<img class="w-50 md:w-48 aspect-square rounded-full" src="./imgs/me.png" alt='My photo from "Форум кванторианцев 2024"'>
+					<p class="font-mono max-w-xs text-2xl text-center md:text-3xl text-blue-400">This is me if you even care :P</p>
 				</div>
 			</div>
 
 			<div class="pt-5 pb-3 flex justify-start"><p class="font-mono text-emerald-700 text-left text-2xl md:text-3xl">// Technologies</p></div>
-			<div class="flex justify-left items-left gap-3">
-				<a><img class="w-25 md:w-20 invert" src="./imgs/python.svg" alt="python"></a>
-				<a><img class="w-25 md:w-20 invert" src="./imgs/c++.svg" alt="c++"></a>
-				<a><img class="w-25 md:w-20 invert" src="./imgs/c.svg" alt="c#"></a>
-				<a><img class="w-25 md:w-20 invert" src="./imgs/arduino.svg" alt="arduino"></a>
-				<a><img class="w-25 md:w-20 invert" src="./imgs/postgresql.svg" alt="postgresql"></a>
-				<a><img class="w-25 md:w-20 invert" src="./imgs/fastapi.svg" alt="fastapi"></a>
-				<a><img class="w-25 md:w-20 invert" src="./imgs/gitvector.svg" alt="git"></a>
-				<a><img class="w-25 md:w-20 invert" src="./imgs/docker.svg" alt="docker"></a>
-				<a><img class="w-25 md:w-20" src="./imgs/touchdesigner.svg" alt="touchdesigner"></a>
-				<a><img class="w-25 md:w-20" src="./imgs/rekordbox.svg" alt="rekordbox"></a>
+			<div class="flex flex-wrap justify-start items-start gap-2">
+				<a><img class="w-15 md:w-20 invert" src="./imgs/python.svg" alt="python"></a>
+				<a><img class="w-15 md:w-20 invert" src="./imgs/c++.svg" alt="c++"></a>
+				<a><img class="w-15 md:w-20 invert" src="./imgs/c.svg" alt="c#"></a>
+				<a><img class="w-15 md:w-20 invert" src="./imgs/arduino.svg" alt="arduino"></a>
+				<a><img class="w-15 md:w-20 invert" src="./imgs/postgresql.svg" alt="postgresql"></a>
+				<a><img class="w-15 md:w-20 invert" src="./imgs/fastapi.svg" alt="fastapi"></a>
+				<a><img class="w-15 md:w-20 invert" src="./imgs/gitvector.svg" alt="git"></a>
+				<a><img class="w-15 md:w-20 invert" src="./imgs/docker.svg" alt="docker"></a>
+				<a><img class="w-15 md:w-20" src="./imgs/touchdesigner.svg" alt="touchdesigner"></a>
+				<a><img class="w-15 md:w-20" src="./imgs/rekordbox.svg" alt="rekordbox"></a>
 			</div>
 
 			<div class="pt-5 pb-3 flex justify-start"><p class="font-mono text-emerald-700 text-left text-2xl md:text-3xl">// Links</p></div>
-			<div class="flex justify-left items-left gap-3">
-				<a href="https://bsky.app/profile/glutesha.bsky.social"><img class="w-25 md:w-20 invert" src="./imgs/bluesky.svg" alt="bluesky"></a>
-				<a href="https://discord.gg/vbEVEma5"><img class="w-25 md:w-20 invert" src="./imgs/discord.svg" alt="discord"></a>
-				<a href="https://www.last.fm/user/Glutesha"><img class="w-25 md:w-20 invert" src="./imgs/last-fm.svg" alt="last-fm"></a>
-				<a href="https://t.me/glutesha"><img class="w-25 md:w-20 invert" src="./imgs/telegram.svg" alt="telegram"></a>
-				<a href="https://github.com/glutesha"><img class="w-25 md:w-20 invert" src="./imgs/github.svg" alt="github"></a>
-				<a href="https://www.reddit.com/user/GLUTESHA/"><img class="w-25 md:w-20 invert" src="./imgs/reddit.svg" alt="reddit"></a>
-				<a href="mailto:mail@glutesha.me"><img class="w-25 md:w-20 invert" src="./imgs/mail.svg" alt="mail"></a>
+			<div class="flex justify-left flex-wrap items-left gap-2">
+				<a href="https://bsky.app/profile/glutesha.pds.witchcraft.systems"><img class="w-18 md:w-20 invert" src="./imgs/bluesky.svg" alt="bluesky"></a>
+				<a class="w-20 md:w-20 invert" href="https://discord.gg/vbEVEma5"><img src="./imgs/discord.svg" alt="discord"></a>
+				<a class="w-20 md:w-20 invert" href="https://www.last.fm/user/Glutesha"><img src="./imgs/last-fm.svg" alt="last-fm"></a>
+				<a class="w-20 md:w-20 invert" href="https://t.me/glutesha"><img src="./imgs/telegram.svg" alt="telegram"></a>
+				<a class="w-20 md:w-20 invert" href="https://github.com/glutesha"><img src="./imgs/github.svg" alt="github"></a>
+				<a class="w-20 md:w-20 invert" href="https://www.reddit.com/user/GLUTESHA/"><img src="./imgs/reddit.svg" alt="reddit"></a>
+				<a class="w-20 md:w-20 invert" href="mailto:mail@glutesha.me"><img src="./imgs/mail.svg" alt="mail"></a>
+				<a class="w-20 md:w-20 invert" href="/links"><img src="./imgs/links.svg" alt="links"></a>
 			</div>
 
 			<div class="pt-5 pb-3 flex justify-start"><p class="font-mono text-emerald-700 text-left text-2xl md:text-3xl">// LastFM</p></div>
@@ -107,7 +111,7 @@
 			</div>
 
 			<div class="pt-5 pb-3 flex justify-start"><p class="font-mono text-emerald-700 text-left text-2xl md:text-3xl">// Mascot</p></div>
-			<div class="flex pb-5 justify-center items-center">
+			<div class="flex flex-col gap-2 md:flex-row pb-5 justify-center items-center">
 				<img class="w-3xl md:w-2xl" src="./imgs/chuv.png" alt="Chuvirla">
 				<p class="font-mono text-2xl text-center md:text-3xl"> This is Чувырла (Chuvirla). Designed and drawn by <a href="https://evakirieshki.straw.page/" class="text-fuchsia-400">Evelina</a>.</p>
 			</div>
@@ -127,10 +131,10 @@
 			</div>
 	</div>
 
-	<div class="fixed z-50 left-1/2 bottom-5 -translate-x-1/2 justify-center flex bg-neutral-950 rounded-3xl m-5 w-3xl p-5 gap-10">
-		<p id="prev" class="flex-1 font-mono text-2xl text-blue-300"><a id="prevurl" href="https://webring.otomir23.me/30/prev">&lt; prev</a></p>
-		<p class="font-mono text-3xl"><a href="https://webring.otomir23.me/">Webring</a></p>
-		<p id="next" class="flex-1 text-end font-mono text-2xl text-blue-300"><a id="nexturl" href="https://webring.otomir23.me/30/next">next ></a></p>
+	<div class="fixed z-50 md:left-1/2 left-1/2 bottom-1 md:bottom-5 -translate-x-1/2 justify-center items-center flex bg-neutral-950 rounded-full w-full max-w-screen text-md md:w-3xl p-5 md:gap-10 md:text-2xl">
+		<a id="prevurl" class="flex-1 font-mono text-blue-300" href="https://webring.otomir23.me/30/prev">&lt; prev</a>
+		<a class="font-mono md:text-3xl text-center" href="https://webring.otomir23.me/">Webring</a>
+		<a id="nexturl" class="flex-1 font-mono text-blue-300 text-end" href="https://webring.otomir23.me/30/next">next ></a>
 	</div>
 </body>
 </html>
