@@ -15,14 +15,25 @@
 	<meta property="og:image" content="imgs/chuvdj.png"/>
 </head>
 <body class="bg-neutral-900 text-white">
-	<div class="flex-col md:flex-row flex justify-center items-center px-5 md:px-0">
-		<div id="glutesha" class="aspect-square w-100 shrink-0"></div>
-		<div class="md:flex-col gap-5 justify-center text-center md:text-start md:items-start">
-			<p class="font-mono text-xl md:text-3xl">I am</p>
-			<div>
-				<img class="w-xl md:w-2xl" src="./imgs/logo.png" alt="Glutesha">
+	<div class="bg-neutral-950 rounded-2xl overflow-hidden m-2 md:m-5 shadow-xl gap-5 shadow-black transition duration-300 ease-in-out hover:shadow-cyan-900 hover:-translate-y-1.5">
+		<div class="w-full flex flex-row bg-neutral-800 py-2 px-2 gap-5">
+			<div class="flex flex-row items-center justify-center gap-2">
+				<div class="bg-red-500 h-6 rounded-full aspect-square"></div>
+				<div class="bg-yellow-500 h-6 rounded-full aspect-square"></div>
+				<div class="bg-green-500 h-6 rounded-full aspect-square"></div>
 			</div>
-			<p class="font-mono text-xl md:text-3xl">Software developer, electronics enthusiast.</p>
+		</div>
+		<div class="flex flex-col md:flex-row justify-center items-center gap-5 pb-5 md:pb-10 px-5 pt-5 md:px-0">
+			<div class="bg-neutral-800 border-1 border-cyan-300 shadow-xl shadow-cyan-900 rounded-full">
+				<div id="glutesha" class="aspect-square h-90 shrink-0"></div>
+			</div>
+			<div class="md:flex-col gap-5 justify-center text-center md:text-start md:items-start">
+				<p class="font-mono text-xl md:text-3xl">I am</p>
+				<div>
+					<img class="w-xl md:w-2xl" src="./imgs/logo.png" alt="Glutesha">
+				</div>
+				<p class="font-mono text-xl md:text-3xl">Software developer, electronics enthusiast.</p>
+			</div>
 		</div>
 	</div>
 	<div class="w-full flex pt-5 px-5 max-w-7xl flex-col mx-auto">
@@ -65,7 +76,7 @@
 
 			<div class="pt-5 pb-3 flex justify-start"><p class="font-mono text-emerald-700 text-left text-2xl md:text-3xl">// LastFM</p></div>
 			<div class="flex justify-center items-center">
-				<div id="lastfm" class="flex-1 px-5 flex-row py-5 justify-center items-center bg-neutral-800 gap-1 overflow-hidden rounded-3xl">
+				<div id="lastfm" class="flex-1 px-5 flex-row py-5 justify-center items-center bg-neutral-800 shadow-xl shadow-black gap-1 overflow-hidden rounded-3xl">
 					<div class="flex max-xl:flex-col justify-start content-start relative">
 						<p class="font-mono text-3xl">loading</p>
 					</div>
@@ -117,10 +128,10 @@
 			</div>
 	</div>
 
-	<div class="fixed z-50 md:left-1/2 left-1/2 bottom-1 md:bottom-5 -translate-x-1/2 justify-center items-center flex bg-neutral-950 rounded-full w-full max-w-screen text-md md:w-3xl p-5 md:gap-10 md:text-2xl">
-		<a id="prevurl" class="flex-1 font-mono text-blue-300" href="https://webring.otomir23.me/30/prev">&lt; prev</a>
+	<div class="fixed z-50 md:left-1/2 left-1/2 bottom-1 md:bottom-5 -translate-x-1/2 justify-center items-center flex bg-black outline-1 outline-cyan-300 shadow-sm shadow-cyan-300 rounded-full w-full max-w-[calc(100%-5px)] text-md md:w-3xl p-5 md:gap-10 md:text-2xl">
+		<a id="prevurl" class="flex-1 font-mono text-cyan-300" href="https://webring.otomir23.me/30/prev">&lt; prev</a>
 		<a class="font-mono md:text-3xl text-center" href="https://webring.otomir23.me/">Webring</a>
-		<a id="nexturl" class="flex-1 font-mono text-blue-300 text-end" href="https://webring.otomir23.me/30/next">next ></a>
+		<a id="nexturl" class="flex-1 font-mono text-cyan-300 text-end" href="https://webring.otomir23.me/30/next">next ></a>
 	</div>
 </body>
 </html>

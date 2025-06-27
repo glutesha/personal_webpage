@@ -5,7 +5,7 @@ let container = document.getElementById('glutesha');
 
 const loader = new GLTFLoader();
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera( 50, 1, 0.1, 1000 );
+const camera = new THREE.PerspectiveCamera( 40, 1, 0.1, 1000 );
 const light = new THREE.HemisphereLight( 0xffffff, 0x080820, 1 );
 
 scene.add( light );
@@ -16,8 +16,8 @@ light.position.x = 0;
 light.intensity = 2;
 
 camera.position.x = 0;
-camera.position.z = 2.5;
-camera.position.y = 0;
+camera.position.z = 3;
+camera.position.y = -0.1;
 
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(container.clientWidth, container.clientHeight);
