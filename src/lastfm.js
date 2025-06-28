@@ -6,7 +6,7 @@ fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=glute
     const trackUrl = track.url;
     const trackImage = track.image[3]["#text"];
     const trackHtml = `
-        <div class="flex flex-col md:flex-row relative font-sans font-stretch-ultra-expanded">
+        <div class="flex flex-col md:flex-row relative font-mona-sans font-black font-stretch-125%">
             <img class="rounded-3xl aspect-square shrink-0 z-1" src="${trackImage}" alt="${trackName}">
             <div class="flex justify-center px-1 md:px-5 py-2 flex-col text-2xl font-bold gap-2">
                 <img alt="chuvirlatribal" class="absolute -right-20 -bottom-28 max-h-70 md:max-h-max md:left-auto md:right-3 flex-1 md:max-w-md md:-top-4 invert opacity-10" src="${tribal}">
