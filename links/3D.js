@@ -1,11 +1,11 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
-var container = document.getElementById('glutesha');
+let container = document.getElementById('glutesha');
 
 const loader = new GLTFLoader();
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera( 50, 1, 0.1, 1000 );
+const camera = new THREE.PerspectiveCamera( 40, 1, 0.1, 1000 );
 const light = new THREE.HemisphereLight( 0xffffff, 0x080820, 1 );
 
 scene.add( light );
@@ -16,8 +16,8 @@ light.position.x = 0;
 light.intensity = 2;
 
 camera.position.x = 0;
-camera.position.z = 2.5;
-camera.position.y = 0;
+camera.position.z = 3;
+camera.position.y = -0.1;
 
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(container.clientWidth, container.clientHeight);
@@ -53,8 +53,8 @@ loader.load('../gluten.glb', function( glb ) {
 target.position.z = camera.position.z;
 target.position.y = camera.position.y;
 
-var mouseX = 0;
-var mouseY = 0;
+let mouseX = 0;
+let mouseY = 0;
 
 window.addEventListener('mousemove', (event) => {
     const rect = container.getBoundingClientRect();
