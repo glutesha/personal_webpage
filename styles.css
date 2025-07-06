@@ -19,6 +19,14 @@
   .badge:active {
     @apply -translate-y-0.5;
   }
+
+  .stats {
+    @apply shadow-xl shadow-black/50 transition duration-300 ease-in-out;
+  }
+  .stats:hover{
+    @apply shadow-black/70 -translate-y-1.5;
+  }  
+  
 }
 @theme {
     --font-mona-sans: 'Mona Sans', sans-serif;
