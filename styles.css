@@ -53,6 +53,13 @@
   .button:active{
     @apply -translate-y-0.5 bg-neutral-500/20;
   }
+
+  .technology{
+    @apply bg-neutral-500/20 w-full md:w-20 flex-1 md:flex-none aspect-square flex items-center justify-center rounded-2xl shadow-xl shadow-black/50 transition duration-300 ease-in-out cursor-not-allowed;
+  }
+  .technology:hover{
+    @apply shadow-neutral-700/50 -translate-y-0.5;
+  }
 }
 @theme {
     --font-mona-sans: 'Mona Sans', sans-serif;
