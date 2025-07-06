@@ -36,6 +36,13 @@
   .link:active{
     @apply active:shadow-cyan-400/50 active:-translate-y-0.5 active:bg-neutral-500/10;
   }
+
+  .tile{
+    @apply shadow-xl shadow-black/50 transition duration-300 ease-in-out relative aspect-square rounded-3xl bg-[#101010] overflow-hidden;
+  }
+  .tile:hover{
+    @apply -translate-y-1.5;
+  }
 }
 @theme {
     --font-mona-sans: 'Mona Sans', sans-serif;
