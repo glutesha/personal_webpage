@@ -43,6 +43,16 @@
   .tile:hover{
     @apply -translate-y-1.5;
   }
+  
+  .button{
+    @apply bg-neutral-700 flex flex-row gap-2 justify-center items-center px-5 py-3 rounded-3xl text-xl md:text-2xl shadow-xl shadow-neutral-200/10 transition duration-300 ease-in-out;
+  }
+  .button:hover{
+    @apply -translate-y-1.5;
+  }
+  .button:active{
+    @apply -translate-y-0.5 bg-neutral-500/20;
+  }
 }
 @theme {
     --font-mona-sans: 'Mona Sans', sans-serif;
