@@ -61,10 +61,9 @@
     @apply shadow-neutral-700/50 -translate-y-0.5;
   }
   .pixel{
-    @apply min-w-30 image-pixelated;
+    @apply min-w-30;
   }
 }
 @theme {
     --font-mona-sans: 'Mona Sans', sans-serif;
-
 }

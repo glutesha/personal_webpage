@@ -1,4 +1,6 @@
 import tribal from '../imgs/tribal.png';
+const ColorThief = require('colorthief');
+
 fetch("https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=glutesha&api_key=ee9f8ab4cf3c744ba03248f2ac1f19e8&format=json").then(r => r.json()).then(r => r.recenttracks.track[0]).then(track => {
     const trackName = track.name;
     const artistName = track.artist["#text"];
