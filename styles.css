@@ -31,7 +31,7 @@
     @apply bg-neutral-500/20 w-full md:w-22.5 flex-1 md:flex-none aspect-square flex items-center justify-center rounded-2xl shadow-xl shadow-black/50 transition duration-300 ease-in-out;
   }
   .link:hover{
-    @apply shadow-cyan-400/50 -translate-y-1.5;
+    @apply shadow-cyan-400/30 -translate-y-1.5;
   }
   .link:active{
     @apply active:shadow-cyan-400/50 active:-translate-y-0.5 active:bg-neutral-500/10;
