@@ -8,7 +8,7 @@ on:
 jobs:
   run_pull:
     name: run pull
-    runs-on: selfhosted
+    runs-on: [self-hosted, Linux, X64]
     
     steps:
     - name: install ssh keys
