@@ -14,7 +14,7 @@
     @apply transition duration-300;
   }
   .badge:hover {
-    @apply -translate-y-1.5 shadow-xl shadow-black/50;
+    @apply -translate-y-1.5 scale-150 shadow-xl shadow-black/50;
   }
   .badge:active {
     @apply -translate-y-0.5;
