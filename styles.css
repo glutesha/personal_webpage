@@ -45,7 +45,7 @@
   }
   
   .button{
-    @apply bg-neutral-700 flex flex-row gap-2 justify-center items-center px-5 py-3 rounded-3xl text-xs md:text-xl shadow-xl shadow-neutral-200/10 transition duration-300 ease-in-out;
+    @apply bg-neutral-700 flex flex-row gap-2 justify-center items-center px-5 py-3 rounded-3xl text-xl shadow-xl shadow-neutral-200/10 transition duration-300 ease-in-out;
   }
   .button:hover{
     @apply -translate-y-1.5;
