@@ -2,7 +2,7 @@
 
 @layer components {
     .link{
-        @apply bg-neutral-500/20 p-2 w-22.5 aspect-square flex items-center justify-center rounded-xl shadow-xl shadow-black/50 transition duration-300 ease-in-out;
+        @apply bg-neutral-500/20 p-2 w-21 md:w-22.5 aspect-square flex items-center justify-center rounded-xl shadow-xl shadow-black/50 transition duration-300 ease-in-out;
     }
     .link:hover{
         @apply shadow-cyan-400/30 -translate-y-1.5;
